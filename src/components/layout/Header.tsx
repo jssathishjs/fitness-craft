@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import * as React from 'react';
 import { Bell, Menu, X, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
@@ -9,10 +9,10 @@ interface HeaderProps {
 }
 
 export function Header({ className }: HeaderProps) {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  const [scrolled, setScrolled] = React.useState(false);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
@@ -30,6 +30,7 @@ export function Header({ className }: HeaderProps) {
     { name: 'Workouts', path: '/workouts' },
     { name: 'Nutrition', path: '/nutrition' },
     { name: 'Progress', path: '/progress' },
+    { name: 'Diabetes', path: '/diabetes' },
   ];
 
   return (
