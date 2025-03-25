@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { Bell, Menu, X, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -31,6 +32,8 @@ export function Header({ className }: HeaderProps) {
     { name: 'Progress', path: '/progress' },
     { name: 'Diabetes', path: '/diabetes' },
     { name: 'Blood Pressure', path: '/blood-pressure' },
+    { name: 'Pills', path: '/pills' },
+    { name: 'Pill Schedule', path: '/schedule-pills' },
   ];
 
   return (
