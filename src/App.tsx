@@ -1,4 +1,3 @@
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Index from '@/pages/Index';
 import Profile from '@/pages/Profile';
@@ -6,6 +5,7 @@ import Progress from '@/pages/Progress';
 import Workouts from '@/pages/Workouts';
 import Nutrition from '@/pages/Nutrition';
 import Diabetes from '@/pages/Diabetes';
+import BloodPressure from '@/pages/BloodPressure';
 import NotFound from '@/pages/NotFound';
 import './App.css';
 
@@ -19,6 +19,7 @@ function App() {
         <Route path="/workouts" element={<Workouts />} />
         <Route path="/nutrition" element={<Nutrition />} />
         <Route path="/diabetes" element={<Diabetes />} />
+        <Route path="/blood-pressure" element={<BloodPressure />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
